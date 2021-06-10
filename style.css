@@ -1,0 +1,147 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    padding: 10px;
+    background-color: #181719;
+    color: #fff;
+}
+
+/*lOGO*/
+
+.company-logo{
+    margin-top: 10px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.company-logo span {
+    padding: 8px;
+
+    border: #fff solid 1px;
+}
+
+/*NAVIGATION*/
+
+.nav-list {
+    display: none;
+    list-style: none;
+}
+
+.nav-item a, .read-more {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*TEXT*/
+
+.main-title{
+    margin-top: 40px;
+    font-family: 'Lora', serif;
+}
+
+.company-description, .read-more {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.company-description {
+    width: 70%;
+}
+
+.read-more-container{
+    margin: 25px 0 35px 0;
+}
+.read-more {
+    font-weight: bold;
+}
+
+/*DESIGN AND DESIGNER*/
+
+.design-container {
+    position: absolute;
+    width: 300px;
+    height: 138px;
+    left: 52px;
+    top: 536px;
+
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.designer-bio {
+    position: relative;
+    display: flex;
+
+    margin-top: 14px;
+    margin-left: 20px;
+}
+.designer-img {
+    width: 36.59px;
+    height: 36.59px;
+
+    background: #C4C4C4;
+    border-radius: 37px;
+}
+
+.designer-info {
+    align-self: center;
+    margin-left: 14px;
+}
+.designer-fullname {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.designer-position {
+    margin: 0;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+
+    color: #828282;
+}
+
+.design-description {
+    margin: 0;
+    margin-left: 18px;
+    margin-top: 10px;
+    width: 210px;
+    
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.interior-img {
+    width: 350px;
+}
+
+/*COPYRIGHT*/
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    text-align: center;
+}
+
+.created-by {
+    position: relative;
+    left: -50%;
+    margin: 0;
+
+    font-size: 14px;
+    font-family: 'Montserrat';
+
+    color: #BDBDBD;
+}
+
+.created-by .username {
+    font-weight: 700;
+}
