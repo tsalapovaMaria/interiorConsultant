@@ -11,7 +11,7 @@ body {
 /*lOGO*/
 
 .company-logo{
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: 'Crimson Pro', serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -24,9 +24,13 @@ body {
 }
 
 /*NAVIGATION*/
+.top-menu {
+    display: flex;
+    position: relative;
+}
 
 .nav-list {
-    display: none;
+    position: fixed;
     list-style: none;
 }
 
@@ -35,6 +39,43 @@ body {
     text-decoration: none;
 }
 
+.nav-button {
+    display: block;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    height: 20px;
+    width: 30px;
+
+    cursor: pointer;
+}
+.nav-button::after, 
+.nav-button::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+
+    background-color: #fff;
+}
+.nav-button::before {
+    top: 0;
+}
+.nav-button::after {
+    bottom: 0;
+}
+.nav-button > span {
+    position: absolute;
+    right: 0;
+    top: 9px;
+
+    height: 3px;
+    width: 100%;
+
+    background-color: #fff;
+}
 
 /*TEXT*/
 
