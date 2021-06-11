@@ -8,8 +8,14 @@ button.onclick = () => {
     navigation.hidden = !navigation.hidden;
 };
 
+let activeLink;
+
 Array.from(navItems).forEach(navItem => {
     navItem.onclick = () => {
+        if(activeLink){
+            activeLink.classList.toggle('clicked-nav-item');
+        }
         navItem.classList.toggle('clicked-nav-item');
+        activeLink = navItem;
     }
 });

@@ -290,5 +290,11 @@ body {
 /*DESKTOP VERSION*/
 
 @media all and (min-width: 992px){
+    body {
+        padding: 42px 77px;
+    }
 
+    .burger-menu {
+        display: none;
+    }
 }
