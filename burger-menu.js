@@ -5,7 +5,7 @@ const navItems = document.querySelectorAll('.nav-item');
 
 button.onclick = () => {
     button.classList.toggle('opened-menu');
-    navigation.hidden = !navigation.hidden;
+    navigation.style.display = (navigation.style.display === 'block')? 'none' : 'block';
 };
 
 let activeLink;
