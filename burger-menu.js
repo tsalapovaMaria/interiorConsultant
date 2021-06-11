@@ -1,5 +1,5 @@
-const button = document.querySelector('nav-button');
+const button = document.querySelector('.burger-menu');
 
 button.onclick = () => {
-    button.classList.toggle('pressed');
+    button.classList.toggle('opened-menu');
 }

@@ -39,34 +39,36 @@ body {
     text-decoration: none;
 }
 
-.nav-button {
+.burger-menu {
     display: block;
 
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 10px;
 
-    height: 20px;
+    height: 21px;
     width: 30px;
 
     cursor: pointer;
+    transition: 0.1s all ease-out;
 }
-.nav-button::after, 
-.nav-button::before {
+.burger-menu::after, 
+.burger-menu::before {
     content: '';
     position: absolute;
     height: 3px;
     width: 100%;
 
     background-color: #fff;
+    transition: 0.1s all ease-out;
 }
-.nav-button::before {
+.burger-menu::before {
     top: 0;
 }
-.nav-button::after {
+.burger-menu::after {
     bottom: 0;
 }
-.nav-button > span {
+.burger-menu > span {
     position: absolute;
     right: 0;
     top: 9px;
@@ -75,6 +77,22 @@ body {
     width: 100%;
 
     background-color: #fff;
+
+    opacity: 1;
+    transition: 0.1s all ease-out;
+}
+
+.burger-menu.opened-menu::before {
+    top: 8px;
+    transform: rotate(45deg);
+}
+.burger-menu.opened-menu::after {
+    bottom: 10px;
+    transform: rotate(-45deg);
+}
+.burger-menu.opened-menu > span {
+    opacity: 0;
+    transition: 0.1s all ease-out;
 }
 
 /*TEXT*/
